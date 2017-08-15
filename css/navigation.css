@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+/******************** Navigation *******************/
+/***************************************************/
+
+#top ul {
+	float: right;
+	margin: 20px 25px 5px 0;
+	/*background:  url("../images/navigation.png") no-repeat scroll left top;*/
+	display: inline;		
+}
+
+#top li {
+	float: left;
+	/*margin: 0 10px 0px 0px;*/
+	display: inline;
+	font-size: 1.1em;
+	font-weight: bold;
+	/*text-indent: -9999px;*/
+}
+
+#top li a {
+	display: block;
+	text-decoration: none;
+	margin-left: 20px;
+	color: #461D37;
+}
+
+#top li a:link {	
+	
+}
+
+#top li a:hover {	
+	color: #C06CA4;
+}
+
+#top li a.selected {	
+	color: #999999;
+}
+
+
+
+/*#top li a.home {
+	width: 82px;
+	background-position: 0 0;
+}
+
+#top li a.about {
+	width: 119px;
+	background-position: 82px 0;
+}
+
+#top li a.prices {
+	width: 94px;
+	background-position: 201px 0;
+}
+
+#top li a.publications {
+	width: 129px;
+	background-position: 295px 0;
+}
+
+#top li a.advice {
+	width: 76px;
+	background-position: 424px 0;
+}
+
+#top li a.home:hover {
+	background:  url("../images/navigation.png") no-repeat scroll 0 -27px;	
+}
+
+#top li a.about:hover {
+	background:  url("../images/navigation.png") no-repeat scroll -82px -27px;
+}
+
+#top li a.prices:hover {
+	background:  url("../images/navigation.png") no-repeat scroll -201px -27px;
+}
+
+#top li a.publications:hover {
+	background:  url("../images/navigation.png") no-repeat scroll -295px -27px;
+}
+
+#top li a.advice:hover {
+	background:  url("../images/navigation.png") no-repeat scroll -424px -27px;
+}
+
+
+#top li a.home.selected {
+	background:  url("../images/navigation.png") no-repeat scroll 0 -54px;	
+}
+
+#top li a.about.selected {
+	background:  url("../images/navigation.png") no-repeat scroll -82px -54px;	
+}
+
+#top li a.prices.selected {
+	background:  url("../images/navigation.png") no-repeat scroll -201px -54px;	
+}
+
+#top li a.publications.selected {
+	background:  url("../images/navigation.png") no-repeat scroll -295px -54px;	
+}
+
+#top li a.advice.selected {
+	background:  url("../images/navigation.png") no-repeat scroll -424px -54px;	
+}*/
+

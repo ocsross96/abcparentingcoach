@@ -1,0 +1,716 @@
+@charset "utf-8";
+/*Clearfix*/
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.hidden { display: none; }
+
+.vHidden {
+    visibility: hidden;
+}
+
+a:focus {
+	outline: 0;
+}
+
+/********** Colors ***********
+
+#461D37 - Purple
+#e0b5d1 - Light Mauve
+#C06CA4 - Pink
+#999999 - Grey
+
+/*****************************
+
+/* General page styles */
+
+html {
+    font-family: Arial, Tahoma, Geneva, sans-serif;
+    font-size: 0.75em;
+    color: #666;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+	focus: 0;
+	background: #E0B5D1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	background: #E0B5D1;
+}
+
+@font-face {
+	font-family: 'FertigoProRegular';
+	src: url('../fonts/fertigo_pro-webfont.eot');
+	src: local('☺'), url('../fonts/fertigo_pro-webfont.woff') format('woff'), url('../fonts/fertigo_pro-webfont.ttf') format('truetype'), url('../fonts/fertigo_pro-webfont.svg#webfontraxdB2yu') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HelveticaNeueMedium';
+	src: url('hlm____-webfont.eot');
+	src: local('☺'), url('../fonts/hlm____-webfont.woff') format('woff'), url('../fonts/hlm____-webfont.ttf') format('truetype'), url('../fonts/hlm____-webfont.svg#webfontVZ6XyEKD') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+h1, h2, h3, h4 {
+	font-family:'FertigoProRegular';
+	color: #461D37;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #461D37;
+}
+
+h3 {
+	font-size: 1.25em;
+	margin-top: 20px;
+	font-weight: bold;
+	color: #461D37;
+}
+
+h4 {
+	font-size: 1.25em;
+}
+
+strong {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+a {
+	color: #000;
+	text-decoration: underline;
+}
+
+#top p {
+	float: right;
+	margin-top: -10px;
+	margin-right: 25px;
+}
+
+#top p a {
+	text-decoration: none;
+	color: #999999;
+}
+
+#container {
+    padding: 0 0 60px 0;
+    width: 1092px;
+    margin: 0 auto;
+    background: url("../images/bodyBackgroundExtendedTestLarge.png") no-repeat scroll center bottom #E0B5D1;
+	position: relative;
+	z-index: 1;
+}
+
+#inner {
+	width: 965px;
+	margin: 0 0 0 75px;
+}
+
+#header {
+}
+
+#top {
+	padding-top: 10px;
+}
+
+.logo {
+	background: url("../images/logoNoReflectionSml.png") no-repeat scroll left top transparent;
+	width: 338px;
+	height: 36px;
+	text-indent: -9999px;
+	float: left;
+}
+
+.slide {
+	background: url("../images/header4.png") no-repeat scroll left top transparent;
+	width: 940px;
+	height: 370px;
+	display: block;
+	clear: both;
+	border: 2px solid #eee;
+	/*-moz-box-shadow: 5px 5px 7px #888;
+	-webkit-box-shadow: 5px 5px 7px #888;*/
+}
+
+.slide img {
+	margin: 335px 0 0 600px;
+
+
+}
+
+.gutter {
+	height: 30px;
+}
+
+.content {
+	margin: 20px 30px 0 10px;
+	clear: both;
+}
+
+.content p {
+	margin: 0 0 10px 0;
+	line-height: 18px;
+	color: #B14A8D;
+}
+
+.contact .content p {
+	margin-right: 260px;
+}
+
+.clear {
+	clear: both;
+}
+
+#footer {
+	background: url(../images/footer.png) no-repeat scroll center top #e0b5d1;
+	height: 185px;
+    width: 1092px;
+    margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+	padding: 70px 0 10px 0;
+	text-align: center;
+}
+
+#footer p {
+	color: #000;
+	margin-bottom: 10px;
+}
+
+#footer p a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+/****************** HomePage Styles ****************/
+
+h1#welcome {
+	background: url(../images/welcomeHeader.png) no-repeat scroll left top transparent;
+	color: #461D37;
+	height: 26px;
+	margin: 0 0 10px 0;
+	text-indent: -9999px;
+}
+
+/******** Call To Action Prompt Box styles *********/
+
+#callToAction {
+	margin: 20px 0 0 0;
+}
+
+.promptBox {
+	height: 150px;
+	width: 280px;
+	margin: 0 30px 0 0;
+	border: 1px solid #461D37;
+	float: left;
+	background: #FFF;
+	position: relative;
+	overflow: hidden;
+	line-height: 15px;
+	/*-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;*/
+}
+
+.promptBox h3 {
+	margin: 5px 0 7px 5px;
+	text-indent: -9999px;
+	height: 22px;
+}
+
+.promptBox p {
+	font-size: 0.9em;
+	line-height: 15px;
+}
+
+.promptBox.meetAmalia p {
+	margin: 0 90px 5px 5px;
+	font-size: 0.9em;
+	line-height: 15px;
+}
+
+.promptBox.getinTouch p {
+	margin: 0 120px 5px 5px;
+}
+
+.promptBox.needAdvice p {
+	margin: 0 126px 5px 5px;
+}
+
+
+
+a.readMore {
+	background: url("../images/readmore.png") no-repeat scroll top left transparent;
+	width: 110px;
+	height: 20px;
+	position: absolute;
+	bottom: 5px;
+	left: 5px;
+	text-indent: -9999px;
+	display: block;
+	cursor: pointer;
+}
+
+a.readMoreRight {
+	left: auto;
+  right: 5px;
+}
+
+a.viewPDF {
+	background: url("../images/viewPDF.png") no-repeat scroll top left transparent;
+	width: 110px;
+	height: 20px;
+	position: absolute;
+	bottom: 5px;
+	right: 45px;
+	text-indent: -9999px;
+	display: block;
+	cursor: pointer;
+}
+
+.last {
+	margin-right: 0px;
+}
+
+.meetAmalia {
+	background: url("../images/amaliaProfile2.png") no-repeat scroll 175px top #FFF;
+}
+
+	.meetAmalia h3 {
+		background: url("../images/amaliaHeaderSmall.png") no-repeat scroll 0 0 transparent;
+	}
+
+.getinTouch {
+	background: url("../images/chinese-boy.jpg") no-repeat scroll 151px 29px #FFF;
+}
+
+	.getinTouch h3 {
+		background: url("../images/touchHeaderSmall.png") no-repeat scroll 0 0 transparent;
+	}
+
+.needAdvice {
+  background: url("../images/boyGlasses.jpg") no-repeat scroll 151px 29px #FFF;
+}
+
+	.needAdvice h3 {
+		background: url("../images/adviceHeaderSmall.png") no-repeat scroll 0 0 transparent;
+	}
+/****************** AboutMe / Publications Page Styles ****************/
+
+.aboutMe .slide, .publications .slide {
+	background: none;
+	height: 0;
+}
+
+.aboutMe .slide img {
+	display: none;
+}
+
+.aboutMe .content,
+.publications .content,
+.contact .content,
+.prices .content,
+.advice .content,
+.sitemap .content,
+.accessibility .content,
+.terms-and-conditions .content,
+.baby-massage .content {
+	padding-top: 15px;
+}
+
+
+.aboutMe h1#welcome {
+	background: url(../images/amaliaHeader.png) no-repeat scroll left top transparent;
+	margin: 0 0 20px 0;
+	height: 22px;
+	text-indent: -9999px;
+}
+
+.aboutMe h3 {
+	margin: 20px 0 20px 0;
+	height: 23px;
+	text-indent: -9999px;
+}
+	.aboutMe h3#qualifications {
+		background: url(../images/qualificationsHeader.png) no-repeat scroll left top transparent;
+	}
+
+	.aboutMe h3#workExperience {
+		background: url(../images/workExperienceHeader.png) no-repeat scroll left top transparent;
+	}
+
+.aboutMe .content img#portrait, .contact .content img#babyContact {
+	float: right;
+	margin: 0 0 0 20px;
+	padding: 3px;
+	background: #FFF;
+	border: 1px solid #eeeeee;
+/*	-moz-box-shadow: 5px 5px 7px #888;
+	-webkit-box-shadow: 5px 5px 7px #888;*/
+}
+
+.aboutMe .content ul, .publications .content ul, .prices .content ul,  .advice .content ul, .sitemap .content ul , .accessibility .content ul, .baby-massage .content ul{
+	margin: 15px 30px 10px 20px;
+	color: #B14A8D;
+}
+
+.aboutMe .content dl#workExperience {
+	color: #C06CA4;
+	margin-left: 20px;
+	padding-bottom: 40px;
+}
+
+.aboutMe .content dl#workExperience dt {
+	list-style-type: none;
+	list-style-position: outside;
+	width: 130px;
+	clear: left;
+	float: left;
+}
+
+.aboutMe .content dl#workExperience dd {
+	float: left;
+	display: inline;
+	padding-bottom: 10px;
+}
+
+.aboutMe .content dl#workExperience.canada dd {
+	margin-bottom: 10px;
+}
+
+.aboutMe .content li, .publications .content li, .prices .content li, .advice .content li, .accessibility .content li, .baby-massage .content li {
+	list-style-type: square;
+	list-style-position: outside;
+	margin: 10px 0 0 0;
+}
+
+.aboutMe .content dl dd {
+	/*font-size: 0.9em;*/
+}
+.purple {
+	color: #461D37;
+}
+
+/*Twitter widget styling */
+#twitterWidget {
+	background: url(../images/twitterBird.png) left top no-repeat transparent;
+	margin-top: 20px;
+	padding: 15px 0 0 20px;
+	position: relative;
+}
+
+.twitterWrapper {
+	background: url(../images/speechBubbleCornerWhite.png) left top scroll no-repeat transparent;
+	position:absolute;
+	top: 20px;
+	left: 105px;
+	height: 8px;
+	width: 15px;
+	z-index: 3;
+}
+
+
+#twitter_update_list {
+	position: relative;
+	z-index: 1;
+	padding: 15px;
+	margin: 5px 270px 0 100px;
+	background: #FFF;
+	-moz-box-shadow: 5px 5px 7px #888;
+	-webkit-box-shadow: 5px 5px 7px #888;
+}
+
+#twitter_update_list li {
+	list-style-type: none;
+	background:url(../images/quotationMarkLeft.png) no-repeat scroll top left transparent;
+}
+
+
+
+/*.quotationLeft {
+	background:url(../images/quotationLeft.png) no-repeat scroll top left transparent;
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	height: 47px;
+	width: 49px;
+	z-index: 2;
+}*/
+
+/*.quotationRight {
+	background:url(../images/quotationRight.png) no-repeat scroll top left transparent;
+	position: absolute;
+	display: block;
+	bottom: 0;
+	right: 0;
+	height: 47px;
+	width: 49px;
+	z-index: 2;
+}*/
+
+#twitter_update_list span {
+	color: #B14A8D;
+	background:url(../images/quotationMarkRight.png) no-repeat scroll right bottom transparent;
+/*	background: #000000;*/
+}
+
+#twitter_update_list li a {
+	display: inline;
+	color: #461D37;
+}
+
+#twitter_update_list li a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+/****************** AboutMe / Publications Page Styles ****************/
+h1#publications {
+	background: url(../images/publicationsHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+.publications .document {
+	border: 1px solid #eeeeee;
+	/*background: url(../images/documentStrip.png) repeat-x scroll top left transparent;*/
+	background: #FFF;
+	overflow: hidden;
+	display: block;
+	padding: 10px;
+	position: relative;
+	width: 680px;
+	margin-bottom: 20px;
+/*	-moz-box-shadow: 5px 5px 7px #888;
+	-webkit-box-shadow: 5px 5px 7px #888;*/
+}
+
+.publications img {
+	float: left;
+	-moz-box-shadow: 3px 3px 5px #888;
+	-webkit-box-shadow: 3px 3px 5px #888;
+	margin-right: 15px;
+}
+
+.publications img.pdf {
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	float: none;
+	margin: 0;
+}
+
+.publications .content ul {
+	margin-left: 155px;
+}
+
+h1#prices {
+	background: url(../images/pricesHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+.prices h3 {
+	margin: 20px 0 20px 0;
+	height: 23px;
+	text-indent: -9999px;
+}
+
+.prices h3#consultation {
+	background:url(../images/consultationHeaderSmall.png) no-repeat scroll top left transparent;
+}
+
+/****************** Contact Page Styles ****************/
+h1#contact {
+	background:url(../images/contactHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+.contact h3 {
+	margin: 20px 0 20px 0;
+	height: 23px;
+	text-indent: -9999px;
+}
+
+h3#email {
+	background:url(../images/emailHeaderSmall.png) no-repeat scroll top left transparent;
+}
+
+h3#twitter {
+	background:url(../images/twitterHeaderSmall.png) no-repeat scroll top left transparent;
+}
+
+
+
+/****************** Advice Page Styles ****************/
+
+h1#advice {
+	background:url(../images/adviceHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+.advice h3 {
+	margin: 20px 0 20px 0;
+	height: 23px;
+	text-indent: -9999px;
+}
+
+h3#overview {
+	background:url(../images/overviewHeaderSmall.png) no-repeat scroll top left transparent;
+}
+
+h3#service {
+	background:url(../images/serviceHeaderSmall.png) no-repeat scroll top left transparent;
+}
+
+h3#topics {
+	background:url(../images/topicsHeaderSmall.png) no-repeat scroll top left transparent;
+}
+
+.advice .content ul, .sitemap .content ul, .baby-massage .content ul.floatedList {
+	display: block;
+	float: left;
+	width: 400px;
+	margin-top: 5px;
+}
+
+.advice h4 {
+	margin-top: 10px;
+}
+
+.advice .content ul li, .baby-massage .content ul.floatedList li {
+	list-style-type: none;
+}
+
+/* Site Map styles */
+
+h1#sitemap {
+	background:url(../images/sitemapHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+.sitemap .content p {
+	padding-left: 20px;
+}
+
+.sitemap .content ul {
+	padding-left: 0px;
+	float: none;
+}
+
+.sitemap .content ul {
+	width: 100px;
+}
+
+/* Accessibility Styles */
+
+h1#accessibility {
+	background:url(../images/accessibilityHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+/* Other text replacement styles */
+
+#groupConsultation {
+	background:url(../images/groupConsultationHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+}
+
+#babyMassage {
+	background:url(../images/babyMassageHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+#internationalHeader {
+	background:url(../images/internationalHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	padding: 0 0 15px 0 ;
+}
+
+.baby-massage .content ul {
+	margin-bottom: 20px;
+}
+
+.baby-massage .content p.first, .baby-massage .content p.last {
+	margin-bottom: 0;
+}
+
+
+#termsHeader {
+	background:url(../images/TermsHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+	height: 40px;
+}
+
+#paymentHeader {
+	background:url(../images/paymentTerms.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+}
+
+#cancellationHeader {
+	background:url(../images/cancellationHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+}
+
+#courseHeader {
+	background:url(../images/courseMaterialsHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+}
+
+#liabilityHeader {
+	background:url(../images/liabilityHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+}
+
+#confidentialityHeader {
+	background:url(../images/confidentialityHeader.png) no-repeat scroll top left transparent;
+	text-indent: -9999px;
+}
+
+.terms-and-conditions h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
